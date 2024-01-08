@@ -35,7 +35,7 @@ const NavBar: React.FC<NavBarProps> = ({ currentUser }) => {
           md:gap-0
           "
           >
-            <Link href="/">
+            <Link href={currentUser ? "/inicio" : "/"}>
               <Image
                 src="/miconcar.png"
                 alt="logo"
@@ -45,13 +45,15 @@ const NavBar: React.FC<NavBarProps> = ({ currentUser }) => {
               />
             </Link>
             <div className="flex items-center gap-8 md:gap-12">
-              <Image
-                src="/realsystem.png"
-                alt="logo"
-                width={200}
-                height={50}
-                className="cursor-pointer"
-              />
+              <div className="hidden md:block">
+                <Image
+                  src="/realsystem.png"
+                  alt="logo"
+                  width={200}
+                  height={50}
+                  className="cursor-pointer"
+                />
+              </div>
               <UserMenu currentUser={currentUser} />
             </div>
           </div>

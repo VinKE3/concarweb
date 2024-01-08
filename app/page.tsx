@@ -7,23 +7,12 @@ export default function Home() {
     <main className="p-8">
       <Container>
         <div className="text-center flex justify-center">
-          <Image
-            src="/1.jpg"
-            alt="logo"
-            width={1200}
-            height={1200}
-            className="cursor-pointer"
-          />
+          <Image src="/1.jpg" alt="logo" width={1200} height={1200} />
         </div>
         <div className="text-center flex justify-center">
-          <Image
-            src="/2.jpg"
-            alt="logo"
-            width={1200}
-            height={1200}
-            className="cursor-pointer"
-          />
+          <Image src="/2.jpg" alt="logo" width={1200} height={1200} />
         </div>
+        <div></div>
       </Container>
     </main>
   );
