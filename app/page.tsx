@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "./components/Container";
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
