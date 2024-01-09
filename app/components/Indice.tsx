@@ -26,66 +26,91 @@ interface IndiceProps {
   }[];
 }
 
-const Indice = () => {
+const Indice = ({ id, title, description, href, subtittle }: IndiceProps) => {
   return (
-    <div>
+    <div className="">
       <h1 className="text-lg bg-gray-200 p-2 text-black mb-4">Índice</h1>
-      <div>
+      <section className="block overflow-auto h-screen">
         <ul className="divide-y divide-gray-300 bg-gray-300 px-4 border">
-          <li className="py-4">
+          <li className="py-2">
             <Link
-              href="/tutoriales/libros"
+              href={href}
               className="flex flex-col space-x-4 rounded-lg cursor-pointer hover:bg-gray-400 p-1"
             >
-              <span className="text-md font-bold ">
-                <span>1.</span> Libros Electrónicos
-              </span>
-              <p>Introducción Libros Electrónicos</p>
+              <h1 className="text-md font-medium space-x-2">
+                <span>{id}</span>
+                <span className="text-sky-700 font-bold">{title}</span>
+              </h1>
+              <p>{description}</p>
             </Link>
-            <ul className="divide-y divide-gray-300 bg-gray-200 rounded-md px-4 py-2 mt-4">
-              <li className="py-2">
-                <Link
-                  href=""
-                  className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-300"
+            {subtittle?.map(({ id, title, description, href, subtitle2 }) => {
+              return (
+                <ul
+                  key={id}
+                  className="divide-y divide-gray-300 bg-gray-200 rounded-md px-4 py-2 mt-2"
                 >
-                  <span className="text-md font-medium">
-                    <span>1.1</span>Libro electronico registro de compras
-                  </span>
-                  <p>Introducción Libros Electrónicos</p>
-                </Link>
-                <ul className="divide-y divide-gray-300 bg-gray-100 rounded-md px-4 py-2 mt-2">
                   <li className="py-2">
                     <Link
-                      href=""
-                      className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-200"
+                      href={href}
+                      className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-300"
                     >
-                      <span className="text-md font-medium">
-                        <span>1.1.1</span> Generacion del libro electronico de
-                        compras
-                      </span>
-                      <p>Introducción Libros Electrónicos</p>
+                      <h1 className="text-md font-medium space-x-2">
+                        <span>{id}</span>
+                        <span className="text-sky-700 font-bold">{title}</span>
+                      </h1>
+                      <p>{description}</p>
                     </Link>
-                    <ul className="divide-y divide-gray-300 bg-gray-50 rounded-md px-4 py-2 mt-2">
-                      <li className="py-2">
-                        <Link
-                          href=""
-                          className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-100"
-                        >
-                          <span className="text-md font-medium">
-                            <span>1.1.1.1</span> Como Generar el libro
-                            electronico de compras
-                          </span>
-                          <p>Introducción Libros Electrónicos</p>
-                        </Link>
-                      </li>
+                    <ul className="divide-y divide-gray-300 bg-gray-100 rounded-md px-4 py-2 mt-2">
+                      {subtitle2?.map(
+                        ({ id, title, description, href, subtitle3 }) => {
+                          return (
+                            <li key={id} className="py-2">
+                              <Link
+                                href={href}
+                                className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-200"
+                              >
+                                <h1 className="text-md font-medium space-x-2">
+                                  <span>{id}</span>
+                                  <span className="text-sky-700 font-bold">
+                                    {title}
+                                  </span>
+                                </h1>
+                                <p>{description}</p>
+                              </Link>
+                              <ul className="divide-y divide-gray-300 bg-gray-50 rounded-md px-4 py-2 mt-2">
+                                {subtitle3?.map(
+                                  ({ id, title, description, href }) => {
+                                    return (
+                                      <li key={id} className="py-2">
+                                        <Link
+                                          href={href}
+                                          className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-100"
+                                        >
+                                          <h1 className="text-md font-medium space-x-2">
+                                            <span>{id}</span>
+                                            <span className="text-sky-700 font-bold">
+                                              {title}
+                                            </span>
+                                          </h1>
+                                          <p>{description}</p>
+                                        </Link>
+                                      </li>
+                                    );
+                                  }
+                                )}
+                              </ul>
+                            </li>
+                          );
+                        }
+                      )}
                     </ul>
                   </li>
                 </ul>
-              </li>
-            </ul>
+              );
+            })}
           </li>
         </ul>
-      </div>
+      </section>
     </div>
   );
 };
