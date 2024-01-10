@@ -3,43 +3,11 @@ import Header from "@/app/components/Header";
 import Heading from "@/app/components/Heading";
 import React from "react";
 import { DataInstalacion } from "./instalacion.data";
-import { ColumnProps } from "@/app/components/table/ColumnProps";
-import Table from "@/app/components/table/Table";
+
 import Link from "next/link";
 import { Download } from "lucide-react";
-type Data = {
-  name: string;
-  job: string;
-  location: string;
-};
+
 const Instalacionpage = () => {
-  const data = [
-    {
-      name: "Cy Ganderton",
-      job: "Quality Control Specialist",
-      location: "Canada",
-    },
-    {
-      name: "Hart Hagerty",
-      job: "Desktop Support Technician",
-      location: "United States",
-    },
-    {
-      name: "Brice Swyre",
-      job: "Tax Accountant",
-      location: "China",
-    },
-  ];
-  const columns: Array<ColumnProps<Data>> = [
-    {
-      key: "name",
-      title: "Name",
-    },
-    {
-      key: "job",
-      title: "Job",
-    },
-  ];
   return (
     <Container>
       <Header
@@ -109,7 +77,11 @@ const Instalacionpage = () => {
                 El campo es obligatorio / La llave única es incorrecta.
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
-                <Link href="">
+                <Link
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://miconcar.com/uploads/documentos/895_concar_cb_sql_c1_1_Llave_unica_es_incorrecta_v1_.pdf"
+                >
                   <button className="px-4 py-2 font-medium text-black bg-gray-200 rounded-md hover:bg-gray-300 focus:outline-none focus:shadow-outline-blue active:bg-blue-600 transition duration-150 ease-in-out flex gap-2">
                     <Download size={24} />
                     Descargar
