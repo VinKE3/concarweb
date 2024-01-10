@@ -1,5 +1,6 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface IndiceProps {
   id: string;
@@ -27,10 +28,25 @@ interface IndiceProps {
 }
 
 const Indice = ({ id, title, description, href, subtittle }: IndiceProps) => {
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const [isContentLarge, setIsContentLarge] = useState(false);
+  useEffect(() => {
+    if (sectionRef.current) {
+      if (sectionRef.current.scrollHeight > window.innerHeight) {
+        setIsContentLarge(true);
+      } else {
+        setIsContentLarge(false);
+      }
+    }
+  }, [sectionRef]);
   return (
     <div className="">
-      <h1 className="text-lg bg-gray-200 p-2 text-black mb-4">Índice</h1>
-      <section className="block overflow-auto h-screen">
+      <section
+        ref={sectionRef}
+        className={`mb-1 ${
+          isContentLarge ? "block overflow-auto h-screen" : ""
+        }`}
+      >
         <ul className="divide-y divide-gray-300 bg-gray-300 px-4 border">
           <li className="py-2">
             <Link
@@ -60,10 +76,14 @@ const Indice = ({ id, title, description, href, subtittle }: IndiceProps) => {
                       </h1>
                       <p>{description}</p>
                     </Link>
-                    <ul className="divide-y divide-gray-300 bg-gray-100 rounded-md px-4 py-2 mt-2">
-                      {subtitle2?.map(
-                        ({ id, title, description, href, subtitle3 }) => {
-                          return (
+
+                    {subtitle2?.map(
+                      ({ id, title, description, href, subtitle3 }) => {
+                        return (
+                          <ul
+                            key={id}
+                            className="divide-y divide-gray-300 bg-gray-100 rounded-md px-4 py-2 mt-2"
+                          >
                             <li key={id} className="py-2">
                               <Link
                                 href={href}
@@ -77,10 +97,14 @@ const Indice = ({ id, title, description, href, subtittle }: IndiceProps) => {
                                 </h1>
                                 <p>{description}</p>
                               </Link>
-                              <ul className="divide-y divide-gray-300 bg-gray-50 rounded-md px-4 py-2 mt-2">
-                                {subtitle3?.map(
-                                  ({ id, title, description, href }) => {
-                                    return (
+
+                              {subtitle3?.map(
+                                ({ id, title, description, href }) => {
+                                  return (
+                                    <ul
+                                      key={id}
+                                      className="divide-y divide-gray-300 bg-gray-50 rounded-md px-4 py-2 mt-2"
+                                    >
                                       <li key={id} className="py-2">
                                         <Link
                                           href={href}
@@ -95,15 +119,15 @@ const Indice = ({ id, title, description, href, subtittle }: IndiceProps) => {
                                           <p>{description}</p>
                                         </Link>
                                       </li>
-                                    );
-                                  }
-                                )}
-                              </ul>
+                                    </ul>
+                                  );
+                                }
+                              )}
                             </li>
-                          );
-                        }
-                      )}
-                    </ul>
+                          </ul>
+                        );
+                      }
+                    )}
                   </li>
                 </ul>
               );

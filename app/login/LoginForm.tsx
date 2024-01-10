@@ -33,7 +33,6 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
 
   useEffect(() => {
     if (currentUser) {
-      console.log("INICIO1");
       router.push("/inicio");
       router.refresh();
     }
@@ -49,7 +48,6 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
       setIsLoading(false);
 
       if (callback?.ok) {
-        console.log("INICIO2");
         router.push("/inicio");
         router.refresh();
         toast.success("Bienvenido!");

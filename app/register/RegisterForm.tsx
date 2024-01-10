@@ -34,7 +34,6 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
 
   useEffect(() => {
     if (currentUser) {
-      console.log("INICIO3");
       router.push("/inicio");
       router.refresh();
     }
@@ -56,7 +55,6 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
           setIsLoading(false);
 
           if (callback?.ok) {
-            console.log("INICIO4");
             router.push("/inicio");
             router.refresh();
             toast.success("Logged in");

@@ -23,8 +23,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   }, []);
 
   useEffect(() => {
-    const user = currentUser;
-    console.log(user);
     if (!currentUser) router.push("/");
   }, [currentUser]);
 

@@ -17,7 +17,7 @@ const LibrosElectronicosPage = () => {
         id="1."
         title="Libros electrónicos"
         description="Introducción Libros Electrónicos."
-        href="/tutoriales/instalacion-sire/instalacion"
+        href="/tutoriales/libros-electronicos/layout/libros-electronicos"
         subtittle={dataSubLibros}
       />
     </Container>
