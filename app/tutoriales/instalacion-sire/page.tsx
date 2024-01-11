@@ -19,7 +19,7 @@ const InstalacionSire = () => {
         id="1"
         title="¿Instalar y/o Actualizar CONCAR SIRE SQL? - Incluye Video"
         description="A continuación detallamos como realiza la instalación y/o Actualización del módulo CONCAR SIRE SQL, para ambos casos es el mismo proceso."
-        href="/tutoriales/instalacion-sire/layout/instalacion"
+        href="/tutoriales/instalacion-sire/instalacion"
       />
     </Container>
   );

@@ -2,10 +2,17 @@
 import Heading from "@/app/components/Heading";
 import { data } from "./libroElectronicoRegistroCompras.data";
 import List from "@/app/components/List";
+import Layout from "../../layouts/layoutLibrosElectronicos";
 
 const LibroElectronicoRegistroCompraPage = () => {
   return (
-    <div>
+    <Layout
+      indice="/tutoriales/libros-electronicos"
+      anterior={true}
+      anteriorHref="/tutoriales/libros-electronicos/libros-electronicos"
+      siguiente={true}
+      siguienteHref="/tutoriales/libros-electronicos/libro-electronico-registro-ventas"
+    >
       <Heading
         title="Libro Electrónico Registro de Compras"
         subtitle="Productos SQL - NET  CONCAR® SQL Productos SQL - NET  CONCAR® SQL #YOMEQUEDOENCASA"
@@ -19,7 +26,7 @@ const LibroElectronicoRegistroCompraPage = () => {
           </div>
         );
       })}
-    </div>
+    </Layout>
   );
 };
 

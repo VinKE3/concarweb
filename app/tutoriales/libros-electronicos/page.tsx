@@ -15,12 +15,11 @@ const LibrosElectronicosPage = () => {
         buttonTitle="Volver a Tutoriales"
         buttonHref="/tutoriales"
       />
-
       <Indice
         id="1."
         title="Libros electrónicos"
         description="Introducción Libros Electrónicos."
-        href="/tutoriales/libros-electronicos/layout/libros-electronicos"
+        href="/tutoriales/libros-electronicos/libros-electronicos"
         subtittle={dataSubLibros}
       />
     </Container>

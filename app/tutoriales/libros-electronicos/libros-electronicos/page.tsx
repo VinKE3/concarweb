@@ -1,11 +1,14 @@
 import Heading from "@/app/components/Heading";
 import TriButtons from "@/app/components/TriButtons";
-import React from "react";
+import Layout from "../../layouts/layoutLibrosElectronicos";
 
 const LibrosElectronicosPage = () => {
   return (
-    <>
-      <TriButtons indice="/tutoriales/libros-electronicos" />
+    <Layout
+      anterior={false}
+      siguiente={true}
+      siguienteHref="/tutoriales/libros-electronicos/libro-electronico-registro-compras"
+    >
       <Heading
         title="Libros electrónicos"
         subtitle="Productos SQL - NET  CONCAR® SQL Productos SQL - NET  CONCAR® SQL #YOMEQUEDOENCASA"
@@ -31,7 +34,7 @@ const LibrosElectronicosPage = () => {
           del 2014.
         </p>
       </div>
-    </>
+    </Layout>
   );
 };
 

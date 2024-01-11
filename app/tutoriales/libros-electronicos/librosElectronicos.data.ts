@@ -4,21 +4,21 @@ export const dataSubLibros = [
     title: "Libro Electrónico Registro de Compras",
     description:
       "Se detalla el proceso para la generación, validación y carga óptima del libro electrónico de compras en el Programa de Libros Electrónicos (PLE-SUNAT).",
-    href: "/tutoriales/libros-electronicos/layout/libro-electronico-registro-compras",
+    href: "/tutoriales/libros-electronicos/libro-electronico-registro-compras",
     subtitle2: [
       {
         id: "1.1.1",
         title: "Generación del Libro Electrónico de Compras",
         description:
           "Este tutorial contiene todo lo relacionado a la creación del libro electrónico de compras en el sistema CONCAR®.",
-        href: "/tutoriales/libros-electronicos/",
+        href: "/tutoriales/libros-electronicos/libro-electronico-registro-compras/generacion-libro-electronico-compras",
         subtitle3: [
           {
             id: "1.1.1.1",
             title: "Cómo Generar el Libro Electrónico de Compras",
             description:
               "El presente documento detalla el procedimiento a realizar en el CONCAR para generar el libro electrónico de compras.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libro-electronico-registro-compras/generacion-libro-electronico-compras/como-generar-libro-compras",
           },
           {
             id: "1.1.1.2",
@@ -26,7 +26,7 @@ export const dataSubLibros = [
               "Estado o Indicador de la Operación en el Libro Electrónico de Compras",
             description:
               "Procedimiento para registrar operaciones de compras según el estado a informar.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libro-electronico-registro-compras/generacion-libro-electronico-compras/estado-indicador-libro-compras",
           },
           {
             id: "1.1.1.3",
@@ -34,7 +34,7 @@ export const dataSubLibros = [
               "Rectificación - Registros Adicionales en Registro de Compras Electrónico",
             description:
               "En esta opción solo se registrarán las rectificaciones de los comprobantes de compras que se informarán en la declaración del libro electrónico de compras.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libro-electronico-registro-compras/generacion-libro-electronico-compras/rectificacion-registro-compras",
           },
         ],
       },
