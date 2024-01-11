@@ -1,7 +1,7 @@
 import Heading from "@/app/components/Heading";
 import Layout from "@/app/tutoriales/layouts/layoutLibrosElectronicos";
 import React from "react";
-import { data } from "../libroElectronicoRegistroCompras.data";
+import { data } from "../../../libros-electronicos/libro-electronico-registro-compras/generacion-libro-electronico-compras/libroElectronicoRegistroCompras.data";
 import List from "@/app/components/List";
 
 const GeneracionLibroCompras = () => {

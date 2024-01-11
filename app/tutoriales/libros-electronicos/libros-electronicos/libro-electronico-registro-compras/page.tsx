@@ -1,13 +1,12 @@
 "use client";
 import Heading from "@/app/components/Heading";
-import { data } from "./libroElectronicoRegistroCompras.data";
+import { data } from "../../libros-electronicos/libro-electronico-registro-compras/generacion-libro-electronico-compras/libroElectronicoRegistroCompras.data";
 import List from "@/app/components/List";
-import Layout from "../../layouts/layoutLibrosElectronicos";
+import Layout from "../../../layouts/layoutLibrosElectronicos";
 
 const LibroElectronicoRegistroCompraPage = () => {
   return (
     <Layout
-      indice="/tutoriales/libros-electronicos"
       anterior={true}
       anteriorHref="/tutoriales/libros-electronicos/libros-electronicos"
       siguiente={true}
