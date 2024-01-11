@@ -77,17 +77,17 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
 
   return (
     <>
-      <Heading title="Sign up for E~Shop" />
-      <Button
+      <Heading title="Concar - Registrar Usuario" />
+      {/* <Button
         outline
         label="Sign up with Google"
         icon={AiOutlineGoogle}
         onClick={() => signIn("google")}
-      />
+      /> */}
       <hr className="bg-slate-300 w-full h-px" />
       <Input
         id="name"
-        label="Name"
+        label="Nombre"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -111,11 +111,11 @@ const RegisterForm: React.FC<RegisterUserProps> = ({ currentUser }) => {
         type="password"
       ></Input>
       <Button
-        label={isLoading ? "Loading..." : "Sing Up"}
+        label={isLoading ? "Loading..." : "Registrarse"}
         onClick={handleSubmit(onSubmit)}
       />
       <p className="text-sm">
-        Already have an account?{" "}
+        Ya tienes una cuenta?{" "}
         <Link className="underline" href="/login">
           Log in
         </Link>

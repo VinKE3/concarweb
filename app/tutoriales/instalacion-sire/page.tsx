@@ -6,13 +6,14 @@ import React from "react";
 const InstalacionSire = () => {
   return (
     <Container>
-      <div className="py-6">
-        <h1 className="font-semibold text-2xl text-sky-700">
-          Instalación y Actualización
-        </h1>
-        <h2>Instalación y Actualización</h2>
-        <p></p>
-      </div>
+      <Heading
+        title="Instalación y Actualización del Sire"
+        subtitle="Proceso de Instalación y Actualización del Sire SQL"
+        className="py-6"
+        button
+        buttonTitle="Volver a Tutoriales"
+        buttonHref="/tutoriales"
+      />
       <Heading title="índice" className="bg-gray-200 px-2" />
       <Indice
         id="1"

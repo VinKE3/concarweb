@@ -68,7 +68,7 @@ const Indice = ({ id, title, description, href, subtittle }: IndiceProps) => {
                   <li className="py-2">
                     <Link
                       href={href}
-                      className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-300"
+                      className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-300 md:pl-5"
                     >
                       <h1 className="text-md font-medium space-x-2">
                         <span>{id}</span>
@@ -76,7 +76,6 @@ const Indice = ({ id, title, description, href, subtittle }: IndiceProps) => {
                       </h1>
                       <p>{description}</p>
                     </Link>
-
                     {subtitle2?.map(
                       ({ id, title, description, href, subtitle3 }) => {
                         return (
@@ -87,7 +86,7 @@ const Indice = ({ id, title, description, href, subtittle }: IndiceProps) => {
                             <li key={id} className="py-2">
                               <Link
                                 href={href}
-                                className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-200"
+                                className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-200 md:pl-5"
                               >
                                 <h1 className="text-md font-medium space-x-2">
                                   <span>{id}</span>
@@ -97,7 +96,6 @@ const Indice = ({ id, title, description, href, subtittle }: IndiceProps) => {
                                 </h1>
                                 <p>{description}</p>
                               </Link>
-
                               {subtitle3?.map(
                                 ({ id, title, description, href }) => {
                                   return (
@@ -108,7 +106,7 @@ const Indice = ({ id, title, description, href, subtittle }: IndiceProps) => {
                                       <li key={id} className="py-2">
                                         <Link
                                           href={href}
-                                          className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-100"
+                                          className="flex flex-col space-x-4 p-1 rounded-lg cursor-pointer hover:bg-gray-100 md:pl-5"
                                         >
                                           <h1 className="text-md font-medium space-x-2">
                                             <span>{id}</span>

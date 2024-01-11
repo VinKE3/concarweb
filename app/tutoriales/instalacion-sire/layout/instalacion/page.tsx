@@ -1,28 +1,20 @@
-import Container from "@/app/components/Container";
-import Header from "@/app/components/Header";
 import Heading from "@/app/components/Heading";
 import React from "react";
 import { DataInstalacion } from "./instalacion.data";
 
 import Link from "next/link";
-import { Download } from "lucide-react";
+import { Download, Paperclip } from "lucide-react";
+import TriButtons from "@/app/components/TriButtons";
 
 const Instalacionpage = () => {
   return (
-    <Container>
-      <Header
-        title="Instalación y Actualización"
-        href="/tutoriales/instalacion-sire"
-        subtitle="Categoría: CONCAR® SIRE SQL"
-        text="Instalación y Actualización"
-        indice="/tutoriales/instalacion-sire"
-      />
+    <div>
+      <TriButtons indice="/tutoriales/instalacion-sire" />
       <Heading
         title="¿Instalar y/o Actualizar CONCAR SIRE SQL? - Incluye Video"
-        className="py-8"
         subtitle="Productos SQL - NET  CONCAR® SQL Productos SQL - NET  CONCAR® SIRE SQL"
       />
-      <div>
+      <div className="mt-10">
         <h1 className="font-semibold">Consideraciones Generales</h1>
         <ul className="list-disc list-inside">
           {DataInstalacion.map(({ id, titulo }) => {
@@ -59,7 +51,10 @@ const Instalacionpage = () => {
         </div>
       </div>
       <div className="mt-5 mb-10">
-        <h1 className="bg-gray-200 py-4 px-2">ARCHIVOS Y ENLACES</h1>
+        <div className="flex bg-gray-200 py-4 px-2 gap-2">
+          <Paperclip size={24} />
+          <h1 className="">ARCHIVOS Y ENLACES</h1>
+        </div>
         <table className="min-w-full divide-y divide-gray-200">
           <thead>
             <tr>
@@ -92,7 +87,7 @@ const Instalacionpage = () => {
           </tbody>
         </table>
       </div>
-    </Container>
+    </div>
   );
 };
 

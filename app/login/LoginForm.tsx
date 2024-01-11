@@ -66,14 +66,14 @@ const LoginForm: React.FC<LoginUserProps> = ({ currentUser }) => {
   return (
     <>
       <Heading title="Iniciar Sesion" />
-      <Button
+      {/* <Button
         outline
         label="Continuar con Google"
         icon={AiOutlineGoogle}
         onClick={() => {
           signIn("google");
         }}
-      />
+      /> */}
       <hr className="bg-slate-300 w-full h-px" />
       <Input
         id="email"
