@@ -4,7 +4,7 @@ export const dataSubLibros = [
     title: "Libro Electrónico Registro de Compras",
     description:
       "Se detalla el proceso para la generación, validación y carga óptima del libro electrónico de compras en el Programa de Libros Electrónicos (PLE-SUNAT).",
-    href: "/tutoriales/libros-electronicos",
+    href: "/tutoriales/libros-electronicos/layout/libro-electronico-registro-compras",
     subtitle2: [
       {
         id: "1.1.1",
