@@ -43,7 +43,7 @@ export const dataSubLibros = [
         title: "Validación de Registro de Compras - PLE",
         description:
           "Reporte que emite el CONCAR® automáticamente, al generar el libro electrónico de compras, cuando detecta observaciones en los comprobantes registrados que impidan la carga del libro electrónico al PLE-SUNAT.",
-        href: "/tutoriales/libros-electronicos/",
+        href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple",
         subtitle3: [
           {
             id: "1.1.2.1",
@@ -51,15 +51,15 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Número de documento no debe estar en blanco o en cero",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación por no consignar el número de documento en el registro, el campo no debe estar en blanco ni ser cero.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/numero-blanco-cero",
           },
           {
             id: "1.1.2.2",
             title:
-              "Validación de Libro Electrónico de Compras - Número de documento no debe estar en blanco o en cero",
+              "Validación de Libro Electrónico de Compras - Número de serie es obligatoria",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación por no consignar el número de serie del documento registrado.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/numero-serie-obligatoria",
           },
           {
             id: "1.1.2.3",
@@ -67,7 +67,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Error en número de serie para el documento de tipo 01 Factura",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación por no consignar correctamente el número de serie para el documento de tipo 01 Factura",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/error-tipo01-factura",
           },
           {
             id: "1.1.2.4",
@@ -75,7 +75,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Para código de documento SUNAT 01 Factura, documento de proveedor debe ser código 6 RUC",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación por no seleccionar un tipo de documento correcto para un proveedor del exterior.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/documento-codigo6-ruc",
           },
           {
             id: "1.1.2.5",
@@ -83,7 +83,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Error en número de serie para tipo de documento 02 Recibo por Honorarios",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación por no consignar correctamente el número de serie del tipo de documento recibo por honorarios.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/error-documento02-recibo-honorarios",
           },
           {
             id: "1.1.2.6",
@@ -91,7 +91,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Error en número de serie para el documento de tipo 10 Recibo por Arrendamiento",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación porque el número de serie del documento tipo 10 Recibo por arrendamiento está incompleto y falta registrar el código por el aporte de renta de primero categoría.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/error-documento10-recibo-arrendamiento",
           },
           {
             id: "1.1.2.7",
@@ -99,7 +99,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Error en número de serie para el documento de tipo 03 Boleta de Venta",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación por no consignar correctamente el número de serie para el documento de tipo 03 Boleta de Venta.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/error-documento03-boleta-venta",
           },
           {
             id: "1.1.2.8",
@@ -107,7 +107,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Error número de serie para el documento de tipo 06 Carta de Porte Aéreo",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación por no consignar correctamente el número de serie para el documento de tipo 06 Carta de Porte Aéreo.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/error-documento06-carta-porte",
           },
           {
             id: "1.1.2.9",
@@ -115,7 +115,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Fecha de documento de referencia no debe ser mayor a fecha de documento para el tipo de documento 07 Nota de crédito",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación por consignar de forma errónea la fecha del documento de referencia para el tipo de documento Nota de crédito, ésta no debe ser mayor que la fecha de documento.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/fecha-documento07-nota-credito",
           },
           {
             id: "1.1.2.10",
@@ -123,7 +123,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Falta documento de referencia para el documento tipo 07 Nota de Crédito",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación por no consignar los datos del documento de referencia para el documento tipo 07 Nota de Crédito.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/falta-documento07-nota-credito",
           },
           {
             id: "1.1.2.11",
@@ -131,7 +131,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Fecha de vencimiento debe ser menor o igual al periodo de proceso para tipo de documento 14 Recibo de servicios públicos",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación cuando la fecha de vencimiento del documento se ha registrado de forma incorrecta, debiendo ser menor o igual al periodo de proceso.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/fecha-vencimiento-documento14",
           },
           {
             id: "1.1.2.12",
@@ -139,7 +139,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Error en número de serie para el documento de tipo 52 DUA Simplificada",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación porque en la serie del número de documento los datos están mal ingresados o éstos contienen caracteres no válidos.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/error-documento52-dua-simplificada",
           },
           {
             id: "1.1.2.13",
@@ -147,7 +147,7 @@ export const dataSubLibros = [
               "Validación de Libro Electrónico de Compras - Error número de serie para el documento de tipo 55 BVME para transporte ferroviario de pasajeros",
             description:
               "Al intentar generar el libro electrónico de Registro de Compras aparece una observación por no consignar correctamente el número de serie para el documento de tipo 55 BVME para transporte ferroviario de pasajeros.",
-            href: "/tutoriales/libros-electronicos/",
+            href: "/tutoriales/libros-electronicos/libros-electronicos/libro-electronico-registro-compras/validacion-registro-compras-ple/error-documento55-transporte-ferroviario",
           },
         ],
       },

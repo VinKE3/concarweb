@@ -12,7 +12,6 @@ export default function Home() {
         <div className="text-center flex justify-center">
           <Image src="/2.jpg" alt="logo" width={1200} height={1200} />
         </div>
-        <div></div>
       </Container>
     </main>
   );
